@@ -1,0 +1,26 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"build_systems":
+	[
+		{
+			"name": "Compile",
+			"working_dir": "${project_path:${folder}}",
+			"shell_cmd": "javac -d build/ src/lox/*.java"
+		},
+		{
+			"name": "Run",
+			"working_dir": "${project_path:${folder}}",
+			"shell_cmd": "java -cp build/ lox.Lox"
+		},
+		{
+			"name": "Build & Run",
+			"working_dir": "${project_path:${folder}}",
+			"shell_cmd": "javac -d build/ src/lox/*.java && java -cp build/ lox.Lox"
+		}
+	]
+}

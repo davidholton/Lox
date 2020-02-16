@@ -1,0 +1,560 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Toek",
+				"TokenType"
+			],
+			[
+				"char",
+				"charAt"
+			],
+			[
+				"GR",
+				"GREATER_EQUAL"
+			],
+			[
+				"LES",
+				"LESS"
+			],
+			[
+				"EQU",
+				"EQUAL_EQUAL"
+			],
+			[
+				"BANG",
+				"BANG_EQUAL"
+			],
+			[
+				"ad",
+				"advance"
+			],
+			[
+				"R",
+				"RIGHT_BRACE"
+			],
+			[
+				"LEF",
+				"LEFT_BRACE"
+			],
+			[
+				"RIGHT_",
+				"RIGHT_PAREN"
+			],
+			[
+				"add",
+				"addToken"
+			],
+			[
+				"token",
+				"tokens"
+			],
+			[
+				"Toke",
+				"TokenType"
+			],
+			[
+				"le",
+				"lexeme"
+			],
+			[
+				"jum",
+				"jumping"
+			],
+			[
+				"jump",
+				"jump_time"
+			],
+			[
+				"stat",
+				"status_code"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"gro",
+				"group_id"
+			],
+			[
+				"grio",
+				"group_id_start"
+			],
+			[
+				"gr",
+				"group_info"
+			],
+			[
+				"gor",
+				"group_info"
+			],
+			[
+				"get",
+				"get_group_info"
+			],
+			[
+				"res",
+				"response"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/lox/Lox.java",
+			"settings":
+			{
+				"buffer_size": 1500,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "{\n\t\"shell_cmd\": \"make\"\n}\n",
+			"settings":
+			{
+				"buffer_size": 25,
+				"line_ending": "Windows",
+				"name": "untitled.sublime-build"
+			}
+		},
+		{
+			"file": "/C/Users/david/AppData/Roaming/Sublime Text 3/Packages/User/JavaRun.sublime-build",
+			"settings":
+			{
+				"buffer_size": 92,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/lox/Scanner.java",
+			"settings":
+			{
+				"buffer_size": 4225,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/lox/Token.java",
+			"settings":
+			{
+				"buffer_size": 352,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/lox/TokenType.java",
+			"settings":
+			{
+				"buffer_size": 453,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Java/JavaC.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 158.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/david/Documents/GitHub/Lox"
+	],
+	"file_history":
+	[
+		"/C/Users/david/Documents/GitHub/Lox/java/com/craftinginterpreters/lox/Scanner.java",
+		"/C/Users/david/Documents/GitHub/Lox/java/com/craftinginterpreters/lox/Token.java",
+		"/C/Users/david/Documents/GitHub/Lox/java/com/craftinginterpreters/lox/TokenType.java",
+		"/C/Users/david/Documents/GitHub/Lox/java/com/craftinginterpreters/lox/Lox.java",
+		"/C/Users/david/Documents/GitHub/Lox/Test.java",
+		"/C/Users/david/AppData/Roaming/Sublime Text 3/Packages/User/JavaRun.sublime-build",
+		"/C/Users/david/Desktop/grep.c",
+		"/C/Users/david/Documents/GitHub/Lox/.gitignore",
+		"/C/Users/david/Documents/GitHub/Lox/com/craftinginterpreters/lox/Lox.java",
+		"/C/Users/david/Documents/GitHub/Lox/Lox.java",
+		"/C/Users/david/Documents/GitHub/Lox/HelloWorld.java",
+		"/C/Users/david/Downloads/A2-parser/C++/scan.cpp",
+		"/C/Users/david/Downloads/A2-parser/A2-parser/primes.cl",
+		"/C/Users/david/Downloads/A2-parser/A2-parser/original-calculator-grammar.txt",
+		"/C/Users/david/Downloads/A2-parser/A2-parser/enhanced-calculator-grammar.txt",
+		"/C/Users/david/Downloads/A2-parser/A2-parser/Makefile",
+		"/C/Users/david/Desktop/camera.gd",
+		"/C/Users/david/Desktop/test.py",
+		"/C/Users/david/Desktop/removepackage.py",
+		"/C/Users/david/Desktop/d.py",
+		"/C/Users/david/Desktop/groups.py",
+		"/C/Users/david/Desktop/h.html",
+		"/C/Users/david/Downloads/config/config.cfg",
+		"/C/Users/david/Downloads/config/autoexec.cfg"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"123"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/lox/Lox.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1500,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								491,
+								491
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17,
+								21
+							]
+						],
+						"settings":
+						{
+							"default_dir": "C:\\Users\\david\\AppData\\Roaming\\Sublime Text 3\\Packages\\User",
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/david/AppData/Roaming/Sublime Text 3/Packages/User/JavaRun.sublime-build",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 92,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								51,
+								51
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/lox/Scanner.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4225,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								128,
+								128
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/lox/Token.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8,
+								8
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/lox/TokenType.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 453,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8,
+								8
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 127.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/JavaRun.sublime-build",
+	"project": "Lox.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
