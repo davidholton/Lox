@@ -2,7 +2,8 @@
 	"folders":
 	[
 		{
-			"path": "."
+			"path": ".",
+			"shell": true
 		}
 	],
 	"build_systems":
@@ -15,12 +16,17 @@
 		{
 			"name": "Run",
 			"working_dir": "${project_path:${folder}}",
-			"shell_cmd": "java -cp build/ lox.Lox"
+			"shell_cmd": "start java -cp build/ lox.Lox"
 		},
 		{
 			"name": "Build & Run",
 			"working_dir": "${project_path:${folder}}",
-			"shell_cmd": "javac -d build/ src/lox/*.java && java -cp build/ lox.Lox"
+			"shell_cmd": "javac -d build/ src/lox/*.java && start java -cp build/ lox.Lox"
+		},
+		{
+			"name": "Generate Syntax Tree",
+			"working_dir": "${project_path:${folder}}",
+			"shell_cmd": "echo Generating Syntax Tree... && javac -d build/ src/tool/GenerateAst.java && start java -cp build/ tool.GenerateAst src/lox/"
 		}
 	]
 }
