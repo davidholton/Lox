@@ -5,7 +5,7 @@ import java.util.List;
 import static lox.TokenType.*;
 
 class Parser {
-	private final list<Token> tokens;
+	private final List<Token> tokens;
 	private int current = 0;
 
 	Parser(List<Token> tokens) {
@@ -68,7 +68,7 @@ class Parser {
 		if (match(BANG, MINUS)) {
 			Token operator = previous();
 			Expr expr = unary();
-			return new Expr.Unary(operator, right);
+			return new Expr.Unary(operator, expr);
 		}
 
 		return primary();
@@ -88,6 +88,8 @@ class Parser {
 			consume(RIGHT_PAREN, "Expect ')' after expression.");
 			return new Expr.Grouping(expr);
 		}
+
+		// throw;
 	}
 
 	private boolean match(TokenType... types) {
@@ -99,6 +101,11 @@ class Parser {
 		}
 
 		return false;
+	}
+
+	private Token consume(TokenType type, String message) {
+		if (check(type)) return advance();
+		throw error(peek(), message);
 	}
 
 	private boolean check(TokenType type) {
