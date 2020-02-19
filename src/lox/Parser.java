@@ -23,7 +23,19 @@ class Parser {
 	}
 
 	private Expr expression() {
-		return equality();
+		return comma();
+	}
+
+	private Expr comma() {
+		Expr expr = equality();
+
+		while (match(COMMA)) {
+			Token operator = previous();
+			Expr right = equality();
+			expr = new Expr.Binary(expr, operator, right);
+		}
+
+		return expr;
 	}
 
 	private Expr equality() {
@@ -97,6 +109,30 @@ class Parser {
 			Expr expr = expression();
 			consume(RIGHT_PAREN, "Expect ')' after expression.");
 			return new Expr.Grouping(expr);
+		}
+
+		if (match(BANG, BANG_EQUAL)) {
+			error(previous(), "Missing left-hand operand.");
+			equality();
+			return null;
+		}
+
+		if (match(GREATER, GREATER_EQUAL, LESS, LESS_EQUAL)) {
+			error(previous(), "Missing left-hand operand.");
+			comparison();
+			return null;
+		}
+
+		if (match(PLUS)) {
+			error(previous(), "Missing left-hand operand.");
+			addition();
+			return null;
+		}
+
+		if (match(STAR, SLASH)) {
+			error(previous(), "Missing left-hand operand.");
+			multiplication();
+			return null;
 		}
 
 		throw error(peek(), "Expect expression.");
