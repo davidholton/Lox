@@ -12,25 +12,25 @@ class Interpreter implements Expr.Visitor<Object>, Stmt.Visitor<Void> {
 	}
 
 	@Override
-	public void visitExpressionStmt(Stmt.Expression stmt) {
+	public Void visitExpressionStmt(Stmt.Expression stmt) {
 		evalutate(stmt.expression);
 		return null;
 	}
 
 	@Override
-	public void visitPrintStmt(Stmt.Print stmt) {
+	public Void visitPrintStmt(Stmt.Print stmt) {
 		Object value = evalutate(stmt.expression);
 		System.out.println(stringify(value));
 		return null;
 	}
 
-	void interpret(List<stmt> statements) {
+	void interpret(List<Stmt> statements) {
 		try {
 			for (Stmt statement : statements) {
 				execute(statement);
 			}
 		} catch(RuntimeError error) {
-			Lox.runtimeErrro(error);
+			Lox.runtimeError(error);
 		}
 	}
 
