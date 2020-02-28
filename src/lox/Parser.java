@@ -53,7 +53,7 @@ class Parser {
 	}
 
 	private Stmt varDeclaration() {
-		Token name = consume(INDENTIFIER, "Expect variable name.");
+		Token name = consume(IDENTIFIER, "Expect variable name.");
 
 		Expr initializer = null;
 		if (match(EQUAL)) {
@@ -149,7 +149,7 @@ class Parser {
 			return new Expr.Literal(previous().literal);
 		}
 
-		if (match(INDENTIFIER)) {
+		if (match(IDENTIFIER)) {
 			return new Expr.Variable(previous());
 		}
 
