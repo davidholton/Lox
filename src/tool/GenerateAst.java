@@ -12,7 +12,10 @@ public class GenerateAst {
 			System.exit(1);
 		}
 		String outputDir = args[0];
+
 		defineAst(outputDir, "Expr", Arrays.asList(
+			"Assign   : Token name, Expr value",
+			// "Comma    : Expr left, Expr right",
 			"Binary   : Expr left, Token operator, Expr right",
 			"Grouping : Expr expression",
 			"Literal  : Object value",
@@ -21,6 +24,7 @@ public class GenerateAst {
 		));
 
 		defineAst(outputDir, "Stmt", Arrays.asList(
+			"Block      : List<Stmt> statements",
 			"Expression : Expr expression",
 			"Print      : Expr expression",
 			"Var        : Token name, Expr initializer"
@@ -79,7 +83,9 @@ public class GenerateAst {
 		}
 
 		writer.println("\t\t}");
+
 		writer.println();
+		writer.println("\t\t@Override");
 		writer.println("\t\t<R> R accept(Visitor<R> visitor) {");
 		writer.println("\t\t\treturn visitor.visit" + className + baseName + "(this);");
 		writer.println("\t\t}");

@@ -37,11 +37,12 @@ class Parser {
 	}
 
 	private Expr expression() {
-		return comma();
+		return assignement(); // comma();
 	}
 
 	private Stmt statement() {
 		if (match(PRINT)) return printStatement();
+		if (match(LEFT_BRACE)) return new Stmt.Block(block());
 
 		return expressionStatement();
 	}
@@ -70,17 +71,46 @@ class Parser {
 		return new Stmt.Expression(expr);
 	}
 
-	private Expr comma() {
+	private List<Stmt> block() {
+		List<Stmt> statements = new ArrayList<>();
+
+		while (!check(RIGHT_BRACE) && !isAtEnd()) {
+			statements.add(declaration());
+		}
+
+		consume(RIGHT_BRACE, "Expect '}' after block.");
+		return statements;
+	}
+
+	private Expr assignement() {
 		Expr expr = equality();
 
-		while (match(COMMA)) {
-			Token operator = previous();
-			Expr right = equality();
-			expr = new Expr.Binary(expr, operator, right);
+		if (match(EQUAL)) {
+			Token equals = previous();
+			Expr value = assignement();
+
+			if (expr instanceof Expr.Variable) {
+				Token name = ((Expr.Variable)expr).name;
+				return new Expr.Assign(name, value);
+			}
+
+			error(equals, "Invalid assignement target.");
 		}
 
 		return expr;
 	}
+
+	// private Expr comma() {
+	// 	Expr expr = equality();
+
+	// 	while (match(COMMA)) {
+	// 		Token operator = previous();
+	// 		Expr right = equality();
+	// 		expr = new Expr.Binary(expr, operator, right);
+	// 	}
+
+	// 	return expr;
+	// }
 
 	private Expr equality() {
 		Expr expr = comparison();
